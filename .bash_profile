@@ -6,10 +6,8 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-
-PATH=$PATH:$HOME/bin
-
-export PATH
+export PATH=$PATH:$HOME/bin
+export LESS='-g -i -M -R -S -W -z-4 -x4'
 
 # Enable Node.js
 if [[ -s ~/.nvm/nvm.sh ]]; then
