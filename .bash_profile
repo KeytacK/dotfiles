@@ -16,5 +16,5 @@ export LESS='-g -i -M -R -S -W -z-4 -x4'
 export HISTIGNORE=ls:ls\ *:ll:ll\ *:history:history\ *
 
 # Setup Golang
-export GOPATH=$HOME/.go
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
