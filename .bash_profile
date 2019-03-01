@@ -19,6 +19,9 @@ export HISTIGNORE=ls:ls\ *:ll:ll\ *:history:history\ *
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# Setup nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
 # Setup Golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
