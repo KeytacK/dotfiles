@@ -16,6 +16,7 @@ export LESS='-g -i -M -R -S -W -z-4 -x4'
 export HISTIGNORE=ls:ls\ *:ll:ll\ *:history:history\ *
 
 # Setup Ruby
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # Setup Golang
