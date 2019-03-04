@@ -25,3 +25,6 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 # Setup Golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+# Setup Docker
+export DOCKER_BUILDKIT=1
