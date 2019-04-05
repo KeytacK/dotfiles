@@ -16,7 +16,7 @@ export LESS='-g -i -M -R -S -W -z-4 -x4'
 export HISTIGNORE=ls:ls\ *:ll:ll\ *:history:history\ *
 
 # Setup Ruby
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 
 # Setup nodebrew
@@ -28,3 +28,9 @@ export PATH=$PATH:$GOPATH/bin
 
 # Setup Docker
 export DOCKER_BUILDKIT=1
+
+# Setup Python
+export PYENV_ROOT=$HOME/.pyenv
+export PATH=$PYENV_ROOT/bin:$PATH
+eval "$(pyenv init -)"
+

@@ -1,6 +1,12 @@
 # .bashrc
 
-PS1='[\D{%Y-%m-%d %H:%M %a} \u@\[\e[33m\]\h\[\e[0m\] \W]\$ '
+# Including git scripts
+source /usr/local/etc/bash_completion.d/git-prompt.sh
+source /usr/local/etc/bash_completion.d/git-completion.bash
+GIT_PS1_SHOWDIRTYSTATE=true
+
+# Setting prompt
+PS1='\n[\D{%Y-%m-%d %a} \t] \[\033[32m\]\w \[\033[33m\]$(__git_ps1)\[\033[00m\]\n\$ '
 
 # User specific aliases and functions
 alias rm='rm -i'
