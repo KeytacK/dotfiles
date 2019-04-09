@@ -6,7 +6,7 @@ source /usr/local/etc/bash_completion.d/git-completion.bash
 GIT_PS1_SHOWDIRTYSTATE=true
 
 # Setting prompt
-PS1='\n[\D{%Y-%m-%d %a} \t] \[\033[32m\]\w \[\033[33m\]$(__git_ps1)\[\033[00m\]\n\$ '
+PS1='\n[\D{%Y-%m-%d %a} \t] \[\033[32m\]\w \[\033[33m\]$(__git_ps1)\n\[\033[35m\]》\[\033[00m\]'
 
 # User specific aliases and functions
 alias rm='rm -i'
