@@ -12,7 +12,19 @@ PS1='\n[\D{%Y-%m-%d %a} \t] \[\033[32m\]\w \[\033[33m\]$(__git_ps1)\n\[\033[35m\
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-alias ll='ls -l'
+
+case "${OSTYPE}" in
+darwin*)
+  alias ls="ls -G"
+  alias ll="ls -lG"
+  alias la="ls -laG"
+  ;;
+linux*)
+  alias ls='ls --color'
+  alias ll='ls -l --color'
+  alias la='ls -la --color'
+  ;;
+esac
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then

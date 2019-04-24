@@ -12,7 +12,7 @@ fi
 
 # User specific environment and startup programs
 export PATH=$PATH:$HOME/bin
-export LESS='-g -i -M -R -S -W -z-4 -x4'
+export LESS='-giMNRSW -z-4 -x4'
 export HISTIGNORE=ls:ls\ *:ll:ll\ *:history:history\ *
 
 # Setup Ruby
@@ -34,3 +34,9 @@ export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/sekitakuya/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/Users/sekitakuya/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/sekitakuya/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/sekitakuya/Downloads/google-cloud-sdk/completion.bash.inc'; fi
