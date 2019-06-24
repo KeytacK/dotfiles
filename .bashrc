@@ -1,8 +1,8 @@
 # .bashrc
 
 # Including git scripts
-source /usr/local/etc/bash_completion.d/git-prompt.sh
-source /usr/local/etc/bash_completion.d/git-completion.bash
+. /usr/local/etc/bash_completion.d/git-prompt.sh
+. /usr/local/etc/bash_completion.d/git-completion.bash
 GIT_PS1_SHOWDIRTYSTATE=true
 
 # Setting prompt
@@ -33,4 +33,4 @@ fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/root/.sdkman"
-[[ -s "/root/.sdkman/bin/sdkman-init.sh" ]] && source "/root/.sdkman/bin/sdkman-init.sh"
+[[ -s "/root/.sdkman/bin/sdkman-init.sh" ]] && . "/root/.sdkman/bin/sdkman-init.sh"
